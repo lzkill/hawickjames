@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/lzkill/hawickjames.svg?branch=master)](https://api.travis-ci.org/lzkill/hawickjames)
+
 # Hawick and James Algorithm
 
 Released: Jun, 2014</p>
