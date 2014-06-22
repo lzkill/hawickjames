@@ -9,6 +9,7 @@
 
 K. A. Hawick, H. A. James. Enumerating Circuits and Loops in Graphs with Self-Arcs and Multiple-Arcs. Computational Science Technical Note CSTN-013, 2008.</description>
 	<url>https://github.com/lzkill/hawickjames</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -35,32 +36,32 @@ K. A. Hawick, H. A. James. Enumerating Circuits and Loops in Graphs with Self-Ar
 		<url>https://github.com/lzkill/hawickjames.git</url>
 		<connection>scm:git:git://github.com/lzkill/hawickjames.git</connection>
 		<developerConnection>scm:git:git@github.com:lzkill/hawickjames.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.jgrapht</groupId>
-				<artifactId>jgrapht</artifactId>
-				<version>0.9.0</version>
-			</dependency>
 
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.11</version>
-				<scope>test</scope>
-			</dependency>
+	<dependencies>
+		<dependency>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-core</artifactId>
+			<version>0.9.0</version>
+		</dependency>
 
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-lang3</artifactId>
-				<version>3.3.2</version>
-			</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
 
-		</dependencies>
-	</dependencyManagement>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+
+	</dependencies>
+
 	<build>
-
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -78,6 +79,15 @@ K. A. Hawick, H. A. James. Enumerating Circuits and Loops in Graphs with Self-Ar
 					<version>2.12</version>
 					<configuration>
 						<testFailureIgnore>false</testFailureIgnore>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.9.1</version>
+					<configuration>
+						<show>protected</show>
+						<windowtitle>Hawick And James Simple Cycles Algorithm</windowtitle>
 					</configuration>
 				</plugin>
 			</plugins>
