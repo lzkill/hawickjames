@@ -49,4 +49,4 @@ If you add improvements to this code please send them to me as pull requests on 
 
 With regards from
 
-[Luiz Kill](mailto:me@lzkill.com)
+[Luiz Kill](mailto:me@lzkill.com) 
