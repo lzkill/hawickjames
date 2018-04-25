@@ -4,9 +4,6 @@ Released: Jun, 2014</p>
 
 Written by [Luiz Kill](mailto:me@lzkill.com) and Contributors
 
-(C) Copyright 2014, by Luiz Kill and Contributors. All rights
-reserved.
-
 ## Introduction ##
 
 This is a Java implementation of the simple cycle enumeration algorithm described by Hawick and James.
